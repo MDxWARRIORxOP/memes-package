@@ -1,0 +1,55 @@
+{
+  "name": "memes-api",
+  "version": "1.0.3",
+  "description": "A package that gets random reddit memes, without any tokens or keys.",
+  "maintainers": [
+    "MDxWARRIORxOP <mohammedsiddiqui2009@gmail.com>"
+  ],
+  "scripts": {
+    "build": "bash ./build",
+    "test": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MDxWARRIORxOP/king-meme-api.git"
+  },
+  "keywords": [
+    "memes",
+    "reddit memes",
+    "random memes",
+    "random reddit memes",
+    "funny memes",
+    "dank memes",
+    "api",
+    "memes api",
+    "random memes api"
+  ],
+  "author": "MDxWARRIORxOP <mohammedsiddiqui2009@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MDxWARRIORxOP/king-meme-api/issues"
+  },
+  "homepage": "https://github.com/MDxWARRIORxOP/king-meme-api#readme",
+  "main": "lib/cjs/index.js",
+  "types": "lib/types/index.d.ts",
+  "module": "lib/mjs/index.js",
+  "files": [
+    "lib"
+  ],
+  "exports": {
+    ".": {
+      "import": "./lib/mjs/index.js",
+      "require": "./lib/cjs/index.js"
+    }
+  },
+  "packageManager": "yarn@3.3.1",
+  "devDependencies": {
+    "@jest/globals": "^29.5.0",
+    "jest": "^29.5.0",
+    "ts-jest": "^29.1.0",
+    "typescript": "^4.9.4"
+  },
+  "dependencies": {
+    "coveralls": "^3.1.1"
+  }
+}
