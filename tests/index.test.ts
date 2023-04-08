@@ -1,4 +1,3 @@
-import { describe, expect, test } from "@jest/globals";
 import { getMeme } from "../src/index";
 
 describe("Testing the one and only getMeme function", () => {
