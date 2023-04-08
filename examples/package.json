@@ -7,6 +7,6 @@
     "start": "node index.js"
   },
   "dependencies": {
-    "memes-api": "1.0.3"
+    "memes-api": "1.0.4"
   }
 }
