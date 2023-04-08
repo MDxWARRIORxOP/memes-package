@@ -1,3 +1,15 @@
+[![Coverage Status](https://coveralls.io/repos/github/MDxWARRIORxOP/memes-package/badge.svg?branch=main)](https://coveralls.io/github/MDxWARRIORxOP/memes-package?branch=main)
+
+[![Github Builds](https://img.shields.io/github/actions/workflow/status/MDxWARRIORxOP/memes-package/main.yml)](https://github.com/MDxWARRIORxOP/memes-package/actions/workflows/main.yml)
+
+![Vulnerabilities](https://img.shields.io/snyk/vulnerabilities/npm/memes-api)
+
+![Downloads](https://img.shields.io/npm/dw/memes-api)
+
+[![Open Issues](https://img.shields.io/github/issues/MDxWARRIORxOP/memes-package)](https://github.com/MDxWARRIORxOP/memes-package/issues)
+
+[![License](https://img.shields.io/github/license/MDxWARRIORxOP/memes-package)](https://github.com/MDxWARRIORxOP/memes-package/blob/main/LICENSE)
+
 # Memes-Api
 
 Get random memes from reddit for free without any tokens or keys.
