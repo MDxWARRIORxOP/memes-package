@@ -14,38 +14,35 @@
 
 Get random memes from reddit for free without any tokens or keys.
 
-# Examples:
+## Installation
+
+```bash
+npm install memes-package
+# or using yarn
+yarn install memes-package
+```
+
+## Usage/Examples:
 
 ```js
+const { getMeme } = require("memes-api");
+// OR using ES modules
 import { getMeme } from "memes-api";
 
 // here sfw means 'Save for work' which means no sexual content.
 // if sfw == true, then there is not going to be any sexual content.
-// if sfw == false, then could be sexual content.
-const meme = getMeme({ sfw: true });
-
-console.log(meme);
-
-/* =>
-{
-    "image": "https://i.redd.it/3fu63af7acsa1.jpg",
-    "title": "I look away annoyed everytime.",
-    "url": "https://www.reddit.com/r/memes/comments/12dr5tj/i_look_away_annoyed_everytime/",
-    "subreddit": "memes",
-    "author": "thepositivepandemic",
-    "upvotes": 31155,
-    "downvotes": 0,
-    "upvoteRatio": 0.92,
-    "nsfw": false,
-    "createdUTC": 1680801633,
-    "thumbnail": "https://b.thumbs.redditmedia.com/pjRmcs0xEN1a1wlEC-nmsfOq5tS8Io0alVfdXEBUK1c.jpg",
-    "pinned": false,
-    "archived": false,
-    "awards": [],
-    "commentAmount": 1422,
-}
-*/
+// if sfw == false, then there could be some sexual content.
+const meme = await getMeme({ sfw: true });
 ```
+
+## Contributing
+
+Contributions are always welcome!
+
+Open a (pull request)[https://github.com/MDxWARRIORxOP/memes-package/pulls] if you have a feature request or an idea.
+Open an (issue)[https://github.com/MDxWARRIORxOP/memes-package/issues] if you encounter any bugs.
+
+Thanks!
 
 # License
 
