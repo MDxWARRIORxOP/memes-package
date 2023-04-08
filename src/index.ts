@@ -33,18 +33,19 @@ export interface Meme {
  * @constant
  * @see https://king-meme-api.mohammedsiddiqui2009.workers.dev/meme
  */
-export async function getMeme(options: Options): Promise<Meme> {
-  const SWF = typeof options.sfw == "function" ? options.sfw() : options.sfw;
+export async function getMeme(options: Options) {
+  const SFW = typeof options.sfw == "function" ? options.sfw() : options.sfw;
+
   const res =
-    SWF == false
+    SFW == true
       ? await fetch(
-          "https://king-meme-api.mohammedsiddiqui2009.workers.dev/meme?sfw=false"
+          "https://king-meme-api.mohammedsiddiqui2009.workers.dev/meme?sfw=true"
         )
       : await fetch(
-          "https://king-meme-api.mohammedsiddiqui2009.workers.dev/meme?sfw=true"
+          "https://king-meme-api.mohammedsiddiqui2009.workers.dev/meme?sfw=false"
         );
 
-  const result = await res.json();
+  const result: any = await res.json();
 
   const returnObject: Meme = {
     archived: result.archived,

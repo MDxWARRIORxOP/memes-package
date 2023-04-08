@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/MDxWARRIORxOP/king-meme-api.git"
+    "url": "https://github.com/MDxWARRIORxOP/memes-package.git"
   },
   "keywords": [
     "memes",
@@ -27,9 +27,9 @@
   "author": "MDxWARRIORxOP <mohammedsiddiqui2009@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/MDxWARRIORxOP/king-meme-api/issues"
+    "url": "https://github.com/MDxWARRIORxOP/memes-package/issues"
   },
-  "homepage": "https://github.com/MDxWARRIORxOP/king-meme-api#readme",
+  "homepage": "https://github.com/MDxWARRIORxOP/memes-packagei#readme",
   "main": "lib/cjs/index.js",
   "types": "lib/types/index.d.ts",
   "module": "lib/mjs/index.js",
@@ -41,6 +41,9 @@
       "import": "./lib/mjs/index.js",
       "require": "./lib/cjs/index.js"
     }
+  },
+  "engines": {
+    "node": ">=18.x"
   },
   "packageManager": "yarn@3.3.1",
   "devDependencies": {
