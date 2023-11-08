@@ -29,7 +29,7 @@ const { getMeme } = require("memes-api");
 // OR using ES modules
 import { getMeme } from "memes-api";
 
-// here sfw means 'Save for work' which means no sexual content.
+// here sfw means 'Safe for work' which means no sexual content.
 // if sfw == true, then there is not going to be any sexual content.
 // if sfw == false, then there could be some sexual content.
 const meme = await getMeme({ sfw: true });
